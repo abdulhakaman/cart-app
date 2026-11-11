@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>My Cart</h1>
+
+    <form class="add-form" onsubmit="return false">
+      <input id="nameInput" type="text" placeholder="Item name">
+      <input id="priceInput" type="number" placeholder="Price">
+      <input id="quantityInput" type="number" placeholder="Qty">
+      <button id="addButton" type="button">Add</button>
+    </form>
+    <p id="message" class="error"></p>
+
+    <ul id="cartList"></ul>
+
+    <section class="summary">
+      <p id="totalText"></p>
+      <p id="discountText"></p>
+      <p id="finalText" class="final"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
